@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>678,3196.6666666666665</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>678,1616</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="70">
@@ -111,12 +111,11 @@
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="688,3132" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main" sap:VirtualizedContainerService.HintSize="688,1551.3333333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Location" />
       <Variable x:TypeArguments="sd:DataTable" Name="dt_Extract" />
       <Variable x:TypeArguments="x:String" Name="StringDT" />
-      <Variable x:TypeArguments="sd:DataTable" Name="dt_Filtered" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -128,19 +127,24 @@
         <OutArgument x:TypeArguments="x:String">[Location]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome:  iProperty.com.my" sap:VirtualizedContainerService.HintSize="626,1555.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="True" OpenMode="Always" ScopeGuid="c3dbeb31-a3a8-4b29-b9af-123e75a09e21" Version="V2" WindowResize="Maximize">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome:  iProperty.com.my" sap:VirtualizedContainerService.HintSize="626,54" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" IsIncognito="True" OpenMode="Always" ScopeGuid="c3dbeb31-a3a8-4b29-b9af-123e75a09e21" Version="V2" WindowResize="Maximize">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Filter For Houses" sap:VirtualizedContainerService.HintSize="450,1336" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Filter For Houses" sap:VirtualizedContainerService.HintSize="450,84.66666666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Rent'" sap:VirtualizedContainerService.HintSize="388,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c3dbeb31-a3a8-4b29-b9af-123e75a09e21" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.iproperty.com.my/" CvTextArea="295, 441, 48, 21" CvTextArgument="Rent" CvType="Text" DesignTimeRectangle="273, 416, 93, 72" DesignTimeScaleFactor="1.5" ElementType="Text" FriendlyName="'Rent'" FullSelectorArgument="&lt;webctrl aaname='Rent' tag='A' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Rent' tag='A' type='' class='Switcherstyle__AnchorTag-ljbrSQ jNMmrB' check:text='Rent' /&gt;" Guid="afd96995-f913-433f-9580-e9b61a0a39b9" ImageBase64="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" InformativeScreenshot="b869c995dcbe6fe2c9459ca096868068.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Search property for sale in Malaysia | iProperty.com.my' /&gt;" SearchSteps="Selector, FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
             <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Search by'" sap:VirtualizedContainerService.HintSize="388,159.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c3dbeb31-a3a8-4b29-b9af-123e75a09e21" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://www.iproperty.com.my/" CvElementArea="462, 513, 1053, 85" CvType="InputBox" DesignTimeRectangle="536, 605, 928, 30" DesignTimeScaleFactor="1.5" ElementType="InputBox" FriendlyName="'Search by'" FullSelectorArgument="&lt;webctrl class='ant-select-selection__rendered' tag='DIV' parentid='search' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl class='ant-select-selection__rendered' tag='DIV' parentid='search' type='' aaname='' /&gt;" Guid="83cf6afa-5cad-4598-a480-525f1c7a2e77" InformativeScreenshot="1995c4056d957c26bc8b73519c03982a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Search property for sale in Malaysia | iProperty.com.my' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
@@ -254,27 +258,26 @@
       </uix:NApplicationCard.TargetApp>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </uix:NApplicationCard>
-    <ui:OutputDataTable DataTable="[dt_Extract]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="626,82" sap2010:WorkflowViewState.IdRef="OutputDataTable_2" Text="[StringDT]" />
-    <WriteLine DisplayName="Write string data" sap:VirtualizedContainerService.HintSize="626,92" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[StringDT]" />
-    <WriteLine DisplayName="Write row count" sap:VirtualizedContainerService.HintSize="626,92" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[dt_Extract.RowCount.ToString]" />
+    <ui:OutputDataTable DataTable="[dt_Extract]" DisplayName="Output Data iproperty rental" sap:VirtualizedContainerService.HintSize="626,82" sap2010:WorkflowViewState.IdRef="OutputDataTable_2" Text="[StringDT]" />
+    <ui:LogMessage DisplayName="Log Message info rental data" sap:VirtualizedContainerService.HintSize="626,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[dt_Extract]" />
     <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="626,754" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,666.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_14">
+          <Sequence DisplayName="write data to excel" sap:VirtualizedContainerService.HintSize="592,666.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_14">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,556" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" KeepExcelFileOpen="True" ResizeWindow="Maximize" WorkbookPath="PropertyListing.xlsx">
+            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="530,556" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" KeepExcelFileOpen="True" ResizeWindow="Maximize" WorkbookPath="rentaldata.xlsx">
               <ueab:ExcelApplicationCard.Body>
                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                   <ActivityAction.Argument>

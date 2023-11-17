@@ -1,7 +1,7 @@
 {
-  "name": "Data_Scrapping_nazattdi",
+  "name": "rental_data_Scrapping_robot",
   "projectId": "4d84d426-7619-4f4a-861e-b826cebcbfa8",
-  "description": "Robot to get data for Naza ttdi",
+  "description": "Robot to get rental data ",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.22.2]",
