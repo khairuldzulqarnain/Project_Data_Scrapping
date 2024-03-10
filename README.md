@@ -1,4 +1,4 @@
-# nazattdi_Project_Data_Scrapping
+# Project_Data_Scrapping
 
 
 RPA Project: Property Information Scraper
